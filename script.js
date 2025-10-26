@@ -25,26 +25,28 @@ function getInitials(name) {
     return name.split(' ').map(word => word[0]).join('');
 }
 
-// *** Modify displayQuote ***
+// *** Display Quote Function ***
 function displayQuote() {
+    // Step 1: Get a random quote object from the array
     const quote = getRandomQuote();
+
+    // Step 2: Set the text content of the quote paragraph
     quoteTextElement.textContent = `"${quote.text}"`; // Add quotes around the text
-    // *** Display initials along with name ***
+
+    // Step 3: Display initials along with the author's name
     const initials = getInitials(quote.author);
-    quoteAuthorElement.textContent = `- ${quote.author} (${initials})`; // MODIFIED LINE
+    quoteAuthorElement.textContent = `- ${quote.author} (${initials})`; 
 }
 
 // --- Event Listeners ---
 // Display a random quote when the button is clicked
 if (newQuoteButton) { // Check if button exists before adding listener
-    // *** Add log confirming button found ***
-    console.log("Button found, adding listener."); // NEW LINE
+    console.log("Button found, adding listener."); // Debug log
     newQuoteButton.addEventListener('click', displayQuote);
 } else {
     console.error("Button with ID 'new-quote-btn' not found.");
 }
 
 // --- Initial Load ---
-// We use the static quote in HTML on initial load.
-// If you wanted a random one on load, you'd uncomment the next line:
+// If you want a random quote on page load, uncomment this line:
 // document.addEventListener('DOMContentLoaded', displayQuote);
