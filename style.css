@@ -55,11 +55,11 @@ h1 {
 }
 
 button {
-    /* *** Change background color *** */
-    background-color: #28a745; /* Green */ /* MODIFIED LINE */
+    background-color: #28a745; /* Green */
     color: white;
     border: none;
-    padding: 12px 25px;
+    /* *** Change padding *** */
+    padding: 8px 16px; /* Smaller Padding */ /* MODIFIED LINE */
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
@@ -67,11 +67,9 @@ button {
 }
 
 button:hover {
-     /* *** Adjust hover color *** */
-    background-color: #218838; /* Darker Green */ /* MODIFIED LINE */
+    background-color: #218838; /* Darker Green */
 }
 
 button:active {
-     /* *** Adjust active color *** */
-    background-color: #1e7e34; /* Even Darker Green */ /* MODIFIED LINE */
+    background-color: #1e7e34; /* Even Darker Green */
 }
