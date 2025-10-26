@@ -33,7 +33,6 @@ if (newQuoteButton) { // Check if button exists before adding listener
 }
 
 // --- Initial Load ---
-// Display a random quote on initial page load (optional, could be first quote)
-// We already have a static quote in HTML, so we don't call displayQuote() on load
+// We use the static quote in HTML on initial load.
 // If you wanted a random one on load, you'd uncomment the next line:
 // document.addEventListener('DOMContentLoaded', displayQuote);

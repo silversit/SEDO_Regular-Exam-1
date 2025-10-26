@@ -55,7 +55,8 @@ h1 {
 }
 
 button {
-    background-color: #5c67f2;
+    /* *** Change background color *** */
+    background-color: #28a745; /* Green */ /* MODIFIED LINE */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -66,9 +67,11 @@ button {
 }
 
 button:hover {
-    background-color: #4a54c4;
+     /* *** Adjust hover color *** */
+    background-color: #218838; /* Darker Green */ /* MODIFIED LINE */
 }
 
 button:active {
-    background-color: #3e47a1;
+     /* *** Adjust active color *** */
+    background-color: #1e7e34; /* Even Darker Green */ /* MODIFIED LINE */
 }
